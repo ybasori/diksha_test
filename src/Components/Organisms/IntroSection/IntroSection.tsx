@@ -3,7 +3,9 @@ import styles from "./IntroSection.module.scss";
 import { data } from "./IntroSection.constant";
 import Arrow from "../../Icons/Arrow";
 
-const IntroSection = () => {
+const IntroSection: React.FC<{
+  introRef: React.RefObject<HTMLDivElement>;
+}> = ({ introRef }) => {
   const [indexOrder, setIndexOrder] = useState(0);
   const onBtn = (value: number) => {
     const newValue = indexOrder + value;
@@ -17,7 +19,7 @@ const IntroSection = () => {
     return setIndexOrder(newValue);
   };
   return (
-    <div className={styles["container"]}>
+    <div className={styles["container"]} ref={introRef}>
       <div className={styles["title"]}>{data[indexOrder].title}</div>
       <div className={styles["subtitle"]}>{data[indexOrder].subtitle}</div>
       <div className={styles["description"]}>

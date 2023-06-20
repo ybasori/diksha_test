@@ -49,6 +49,7 @@
   height: 100%;
   overflow: hidden;
   display: flex;
+  transition: transform 0.3s;
 }
 
 .slider-item {

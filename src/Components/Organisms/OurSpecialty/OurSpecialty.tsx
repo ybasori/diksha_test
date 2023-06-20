@@ -20,17 +20,21 @@ const OurSpecialty = () => {
     return setIndexOrder(newValue);
   };
   const onPosition = (value: number) => {
-    const widthSlider = slider.current?.offsetWidth ?? 0;
-    const gap = 10;
-    const totalItem = data.length;
+    if (slider.current) {
+      const widthSlider = slider.current.offsetWidth;
+      const gap = 10;
+      const totalItem = data.length;
 
-    const pos =
-      widthSlider / 2 -
-      (widthSlider * ((value + 1) / totalItem) +
-        value * gap -
-        70 / (value + 1));
+      const pos =
+        widthSlider / 2 -
+        (widthSlider * ((value + 1) / totalItem) +
+          value * gap -
+          70 / (value + 1));
 
-    return pos;
+      return pos;
+    } else {
+      return 132;
+    }
   };
   return (
     <div className={styles["container-blue"]}>
@@ -42,27 +46,21 @@ const OurSpecialty = () => {
           sit amet congue aliquam.
         </div>
         <div className={styles["slider-container"]} ref={slider}>
-          {slider.current !== null ? (
-            <div
-              className={styles["slider"]}
-              style={{
-                transform: `translate(${onPosition(indexOrder)}px, 0px)`,
-              }}
-            >
-              {data.map((item, key) => (
-                <div key={key} className={styles["slider-item"]}>
-                  <div className={styles["slider-item-icon"]}>{item.icon}</div>
-                  {indexOrder === key && (
-                    <div className={styles["slider-item-name"]}>
-                      {item.name}
-                    </div>
-                  )}
-                </div>
-              ))}
-            </div>
-          ) : (
-            <></>
-          )}
+          <div
+            className={styles["slider"]}
+            style={{
+              transform: `translate(${onPosition(indexOrder)}px, 0px)`,
+            }}
+          >
+            {data.map((item, key) => (
+              <div key={key} className={styles["slider-item"]}>
+                <div className={styles["slider-item-icon"]}>{item.icon}</div>
+                {indexOrder === key && (
+                  <div className={styles["slider-item-name"]}>{item.name}</div>
+                )}
+              </div>
+            ))}
+          </div>
           <div className={styles["slider-cover"]}></div>
         </div>
         <div className={styles["description-slider"]}>
