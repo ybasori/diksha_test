@@ -1,0 +1,143 @@
+.container-blue {
+  background: #509fdd;
+  width: 100%;
+  padding: 35px 20px 47px;
+  box-sizing: border-box;
+}
+.container {
+  background: #fff;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #029fe4;
+  margin: 42px 0 0px;
+  box-sizing: border-box;
+  padding: 0 0 0 33px;
+}
+
+.description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  color: #303030;
+  margin: 10px 0px 0 0px;
+  padding: 0 20px 0 33px;
+  box-sizing: border-box;
+}
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  margin: 28px auto 0;
+  height: 160px;
+}
+
+.slider {
+  top: 0;
+  left: 0;
+  position: absolute;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+}
+
+.slider-item {
+  min-width: 132px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+
+  &:first-child {
+    margin-left: 0px;
+  }
+}
+
+.slider-item-icon {
+  width: 100%;
+}
+
+.slider-item-name {
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #303030;
+}
+
+.slider-cover {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  margin: 0px auto;
+  background: linear-gradient(
+    270deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 50%,
+    #ffffff 97.4%
+  );
+}
+
+.description-slider {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0px 27px;
+  margin: 38px 0px 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #a7a7a7;
+}
+.slider-navigation {
+  display: flex;
+  margin: 40px 0 55px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 27px;
+}
+.btn-left,
+.btn-right {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.btn-left {
+  margin-right: auto;
+}
+.btn-right {
+  margin-left: auto;
+}
+
+.slider-indicators {
+  display: flex;
+  flex-direction: row;
+}
+
+.slider-item-indicator {
+  cursor: pointer;
+  margin: 0 0 0 16px;
+  &:first-child {
+    margin: 0;
+  }
+}

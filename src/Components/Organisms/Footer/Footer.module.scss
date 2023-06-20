@@ -1,0 +1,51 @@
+.container {
+  width: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  padding: 34px 26px 125px;
+}
+.address {
+  margin: 30px 0 0 0;
+  background: #fff;
+  padding: 25px;
+  box-sizing: border-box;
+  width: 100%;
+}
+.cla {
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
+  padding: 8px 17px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  text-transform: uppercase;
+  color: #00537c;
+}
+.address-text {
+  margin: 40px 0 0 0;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: 0.02em;
+
+  color: #25a0d8;
+}
+
+.group-link {
+  margin: 30px 0 0 0;
+}
+.link {
+  cursor: pointer;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 48px;
+  color: #ffffff;
+}

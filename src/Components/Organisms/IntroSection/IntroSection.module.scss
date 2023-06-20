@@ -1,0 +1,81 @@
+.container {
+  padding: 48px 40px 69px;
+}
+
+.title {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 30px;
+  color: #029fe4;
+}
+.subtitle {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 38px;
+  color: #000000;
+}
+.description {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.01em;
+  color: #777777;
+  min-height: 196px;
+}
+
+.navigation {
+  display: flex;
+}
+.btn-navigation {
+  margin: 0 0 0 auto;
+  display: flex;
+  .btn-left,
+  .btn-right {
+    border: none;
+    width: 50px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .btn-left {
+    background: #f1f1f1;
+  }
+  .btn-right {
+    background: #1ba0e1;
+  }
+}
+
+.number {
+  .current-number {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #303030;
+  }
+  .separator-number {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 38px;
+    color: #303030;
+  }
+  .total-number {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 38px;
+    color: #c0c0c0;
+  }
+}
